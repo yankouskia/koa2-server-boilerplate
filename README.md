@@ -10,7 +10,9 @@ npm start
 
 ### Use
 Get requests: `api/load` - loading stored data on server
+
 Post requests: `api/save` - saving data on server
+
 Other queries will render static html
 
 ### Store data on server
@@ -20,7 +22,7 @@ For permanent store data on server without any db, use `node-persist`
 You can use fetch for testing
 
 ### Request tests
-
+You can use for example `fetch` in Chrome for test requests
 #####Post request for saving data
 
 ```js
