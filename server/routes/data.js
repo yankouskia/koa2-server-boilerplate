@@ -1,9 +1,14 @@
 'use strict';
 
 import * as dataHandlers from 'handlers/data';
+import * as staticHandlers from 'handlers/static';
 
 export default (router) => {
+  console.log('&&&&&');
   router
-    .get('/load', dataHandlers.load)
-    .post('/save', dataHandlers.save);
+    .get('/api/load', dataHandlers.load)
+    .post('/api/save', dataHandlers.save);
+
+  router
+    .get('*', staticHandlers.get);
 };

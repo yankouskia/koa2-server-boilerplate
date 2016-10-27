@@ -5,7 +5,7 @@ import Router from 'koa-router';
 import dataRoute from './data';
 
 export default function api() {
-  const router = new Router({ prefix: '/api/dev' });
+  const router = new Router();
 
   dataRoute(router);
 
