@@ -14,7 +14,7 @@ export default function middleware() {
     logger(),
     helmet(),
     convert(cors()),
-    convert(bodyParser()),
+    bodyParser(),
     views(path.join(__dirname, '../views'))
   ]);
 }

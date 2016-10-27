@@ -1,9 +1,14 @@
 'use strict';
 
+import { getItem, setItem } from 'utils/serverStorage';
+
 export async function load(ctx) {
-  ctx.body = await Promise.resolve({ name: 'Alex' });
+  const data = await getItem('data');
+  ctx.body = await Promise.resolve({ data });
 }
 
 export async function save(ctx) {
-  ctx.body = await Promise.resolve({ name: 'new Name' });
+  const data = ctx.request.body;
+  await setItem('data', data);
+  ctx.body = await Promise.resolve({ status: 'ok' });
 }
