@@ -4,6 +4,6 @@ import * as dataHandlers from 'handlers/data';
 
 export default (router) => {
   router
-    .get('/data', dataHandlers.get)
-    .post('/data', dataHandlers.add);
+    .get('/load', dataHandlers.load)
+    .post('/save', dataHandlers.save);
 };
