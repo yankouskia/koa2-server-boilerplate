@@ -9,5 +9,5 @@ export default function api(router) {
     .post('/api/save', dataHandlers.save);
 
   router
-    .get('*', staticHandlers.get);
+    .get('*', staticHandlers.render);
 };

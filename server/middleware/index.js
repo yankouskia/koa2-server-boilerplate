@@ -17,4 +17,4 @@ export default function middleware() {
     bodyParser(),
     views(path.join(__dirname, '../views'))
   ]);
-}
+};

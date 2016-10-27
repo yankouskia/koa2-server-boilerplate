@@ -17,4 +17,4 @@ export async function setItem(key, value) {
 
 export async function getItem(key, ) {
   return await storage.getItem('data');
-}
+};

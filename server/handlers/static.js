@@ -1,5 +1,5 @@
 'use strict';
 
-export async function get(ctx) {
+export async function render(ctx) {
   await ctx.render('index');
-}
+};

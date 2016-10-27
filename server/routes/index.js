@@ -2,14 +2,14 @@
 
 import compose from 'koa-compose';
 import Router from 'koa-router';
-import initializeApi from './api';
+import initApi from './api';
 
 export default function routesHandler() {
   const router = new Router();
-  initializeApi(router);
+  initApi(router);
 
   return compose([
     router.routes(),
     router.allowedMethods(),
   ]);
-}
+};
