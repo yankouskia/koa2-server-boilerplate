@@ -1,0 +1,49 @@
+{
+  "name": "koa-server-boilerplate",
+  "version": "1.0.0",
+  "description": "Koa server boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon --watch server --exec node server/index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yankouskia/koa-server-boilerplate.git"
+  },
+  "keywords": [
+    "koa",
+    "node",
+    "server",
+    "js",
+    "boilerplate",
+    "rest",
+    "static",
+    "babel"
+  ],
+  "author": "yankouskia aleksandr.yankovskiy@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yankouskia/koa-server-boilerplate/issues"
+  },
+  "homepage": "https://github.com/yankouskia/koa-server-boilerplate#readme",
+  "dependencies": {
+    "app-module-path": "^2.1.0",
+    "koa": "^2.0.0-alpha.3",
+    "koa-bodyparser": "^2.2.0",
+    "koa-compose": "^3.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-cors": "0.0.16",
+    "koa-helmet": "^2.0.0-alpha.1",
+    "koa-logger": "^2.0.0",
+    "koa-router": "^7.0.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0"
+  }
+}
