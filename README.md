@@ -7,6 +7,7 @@ npm install
 npm start
 // npm run dev (running server with hot reload)
 ```
+Then open http://localhost:3000/
 
 ### Use
 Get requests: `api/load` - loading stored data on server
