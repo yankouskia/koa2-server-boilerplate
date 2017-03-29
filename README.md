@@ -44,7 +44,7 @@ fetch('/api/save', {
   .then(data => console.log(data));
 ```
 
-#####Get request for loading data
+##### Get request for loading data
 
 ```js
 const payload = {
